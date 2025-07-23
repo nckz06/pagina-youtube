@@ -1,0 +1,281 @@
+/* --------------- ÁREA DE IMPORTS --------------- */
+@import url('reset.css');
+@import url('global.css');
+
+
+/* --------------- ESTILIZAÇÃO DA PÁGINA --------------- */
+
+/* --------- HEADER --------- */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 56px;
+
+    background-color: #fff;
+    padding: 0 32px;
+}
+
+
+
+/* Conteúdo da Esquerda (MENU & LOGO) */
+header .left-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+
+
+/* Conteúdo Central (BARRA DE PESQUISA) */
+header .center-content .search-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 40px;
+    width: 404px;
+}
+
+header .search-content .search-field {
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    height: 40px;
+    width: 348px;
+}
+
+header .search-content .search-button {
+    width: 57px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+/* Conteúdo Direita (MENU DE USUÁRIO) */
+header .right-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+header .right-content .perfil-icon {
+    border: 1px solid #000;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* --------- MAIN CONTENT --------- */
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 32px 0;
+    gap: 32px;
+}
+
+/* Conteúdo Principal (Tela do Vídeo Assistido) */
+main .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    width: 952px;
+    height: 746px;
+}
+
+main .video-container .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
+
+main .video-container .video {
+    background-color: #000;
+    width: 952px;
+    height: 537px;
+}
+
+.video-container .video-title h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.video-container .video-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.video-action .channel-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12px;
+}
+
+.channel-info .logo-area {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.channel-info .channel-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    /* background-color: gray; */
+}
+
+.channel-info .channel-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.channel-details .channel-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.channel-details .subscribe-count {
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151;
+}
+
+.video-action .subscribe-button {
+    width: 159px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #CC0000;
+}
+
+.video-action .like,
+.video-action .dislike, 
+.video-action .share, 
+.video-action .download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.video-action .like span, 
+.dislike span, 
+.share span, 
+.download span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.video-action 
+.like:hover span, 
+.dislike:hover span, 
+.share:hover span, 
+.download:hover span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video-container .video-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+.video-container .video-info p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video-container .video-description p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #515151;
+    margin-bottom: 12px;
+}
+
+
+
+
+/* --------- SIDEBAR --------- */
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+
+aside .video-recommend {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+aside .video-recommend .video-recommend__thumb img {
+    background-color: gray;
+    width: 160px;
+    height: 90px;
+    border-radius: 4px;
+}
+
+.video-recommend .video-recommend__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+
+.video-recommend__info .video-recommend__title {
+    font-size: 14px;
+    font-weight: 600;
+    width: 250px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.video-recommend__info .video-recommend__channel,
+.video-recommend__info .video-recommend__views p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151;
+}
